@@ -1,6 +1,6 @@
 {
   "name": "wiring-pi",
-  "version": "2.2.1",
+  "version": "2.46",
   "description": "Bindings to wiringPi",
   "main": "lib/exports.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:WiringPi/WiringPi-Node.git"
+    "url": "git@github.com:bzrk/WiringPi-Node.git",
   },
   "keywords": [
     "wiringPi",
@@ -19,10 +19,6 @@
     "raspberrypi",
     "bcm2835"
   ],
-  "author": "Igor Soarez <igorsoarez@gmail.com>",
-  "contributors": [
-    "Leandre Gohy <leandre.gohy@hexeo.be>",
-    "Eugene Ware <eugene@noblesamurai.com>"
-  ],
+  "author": "Thomas Wünsche",
   "license": "BSD"
 }
