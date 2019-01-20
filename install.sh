@@ -38,16 +38,6 @@ check_git_clone() {
 
 rm ./install.log 2>/dev/null 1>&2
 
-echo -n "Cloning libWiringPi ... "
-rm -Rf ./wiringpi 2>/dev/null 1>&2
-git clone git://git.drogon.net/wiringPi -b 2.46 > ./install.log 2>&1
-check_git_clone
-#git submodule init
-#check_git_clone
-#git submodule update
-#check_git_clone
-echo "done."
-
 patch ./wiringpi/devLib/Makefile < ./patchs/devLib_Makefile.patch
 patch ./wiringpi/gpio/Makefile < ./patchs/gpio_Makefile.patch
 
